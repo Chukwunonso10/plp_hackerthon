@@ -416,3 +416,32 @@ fieldset{
     opacity: 0.6;
     
 }
+
+/* projects */
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    column-gap: 5px;
+    row-gap: 60px;
+    margin-top: 20px;
+
+}
+
+.project1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.img-p{
+    width: 300px;
+    margin-left: 20px;
+    
+}
+
+.project-header{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px;
+
+}
