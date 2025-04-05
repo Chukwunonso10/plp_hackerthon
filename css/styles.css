@@ -612,5 +612,16 @@ fieldset{
 .fb:hover{
     cursor: pointer;
     opacity: 0.6;
+
+}
+
+.fa-solid{
+    
+}
+
+
+/* css for smaller screens */
+
+@media only screen and (max-width: 600px){
     
 }

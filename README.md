@@ -31,7 +31,9 @@ A snapshot of my academic background and certifications, reflecting my growth an
 This section is **fully functional** — visitors can reach out to me through:
 - Email
 - GitHub
-- LinkedIn (or other social links you included)
+- LinkedIn
+- Instagram
+
 
 ---
 
@@ -47,8 +49,7 @@ This portfolio is **hosted using GitHub Pages** for easy and free deployment.
 
 ## 🌐 Live Demo
 
-🔗 [Visit the Live Site](https://your-username.github.io/your-repo-name)  
-_(Update the link above after deploying)_
+🔗 [Visit the Live Site]  https://chukwunonso10.github.io/plp_hackerthon/
 
 ---
 
