@@ -41,6 +41,7 @@ body{
     justify-content: space-between;
     margin-top: 20px;
     flex-wrap: wrap;
+    align-items: start;
    
 }
 
@@ -52,6 +53,11 @@ body{
     font-weight: 700px;
     
     
+}
+.image-container{
+    width: 20%;
+    margin-left: 10px;
+    margin:20px;
 }
 
 .head-link li a:hover{
@@ -67,8 +73,7 @@ body{
 }
 
 .head-logo{
-    margin: 20px;
-    width: 200px;
+    width: 20%;
     cursor: pointer;
     border-radius: 20px;
 }
@@ -91,31 +96,45 @@ body{
     
     
     
-.cv-btn, .hire-me-btn{
-    font-size: 24px;
-    margin-left: 60px;
-    background-color: green ;
+.cv-btn{
+    width: 3%;
+    font-size: 16px;
+    margin-left: 70px;
     color: white;
     border-radius: 10px;
-    padding: 12px;
+    padding: 10px;
     border: none;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 2px 2px 5px grey;
-}
-.cv-btn:hover{
-    font-size: 25px;
-    background-color:red;
-    transition: box-shadow 0.15s, font-size 0.15s;
     opacity: 0.6;
-}
-.hire-me-btn:hover{
-    font-size: 25px;
-    background-color: red;
-    transition: box-shadow 0.15s, font-size 0.15s;
-    opacity: 0.6;
+    text-align: center;
+    background-color: lightgray;
+    display: flex;
+    
+    
+    
 }
 
+.cv-btn img{
+    width: 100%;
+
+}
+.btn-cv{
+    border-radius: 10px;
+    background-color: green;
+
+}
+.cv-btn:hover{
+    font-size: 18px;
+    background-color:red;
+    transition: box-shadow 0.15s, font-size 0.15s;
+    
+}
+.cv-btn img:hover{
+    width: 120%;
+    transition: width 0.15s;
+}
 
  /* about section */
 
@@ -126,50 +145,52 @@ body{
     justify-content: space-between;
     padding: 30px 0;
     flex-wrap: nowrap;
-    align-items: cente;
+    margin: 20px;
     
 
  }
  .about-image{
-    flex-basis: 50%;
-    margin-left: 10px;
     width: 100%;
-    border: 2px solid grey;
+    flex-basis: 40%;
+    margin-left: 10px;
     
     
  }
  .about-image img{
     border-radius: 15px;
-    width: 400px;
+    width: 100%;
     
     
     
  }
  .contact-title{
     padding-bottom: 10px;
+    text-align: center;
  }
 
  .about-message{
-    flex-basis: 70%;
-    margin-right: 10px;
-    border: 2px solid grey;
-    margin-left: 10px;
+    width: 100%;
+    margin-right: 40px;
+    height: 400px;
+    margin-left: 40px;
 
  }
 
  .about-message p{
     font-size: 18px;
+    
  }
 
  .contact-title{
     font-size: 60px;
  }
  .about-column{
+    width: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-top: 10px;
     margin-left: 10px;
+    justify-content: space-between;
  }
 
  
@@ -182,7 +203,7 @@ body{
 
  .skills-col::after{
     position: absolute;
-    content: " ";
+    content: "";
     height: 3px;
     background-color: red;
     width: 100%;
@@ -215,6 +236,8 @@ body{
     font-size: 20px;
     cursor: pointer;
     position: relative;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .portfolio-col{
@@ -250,15 +273,20 @@ body{
 
 .skillset-container ul{
     list-style: none;
+    margin-right: 50px;
 }
 .skillA span{
     color: red;
-    font-size: 15px;
-    
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.skillA li{
+    margin: 20px 0;
 }
 .skillB span{
     color: red;
-    font-size: 15px;;
+    font-size: 15px;
 }
 .skillC span{
     color: red;
@@ -279,6 +307,8 @@ body{
 .skillset-container.active-tab{
     display:block;
 }
+
+
 
 /* contact me section */
 .contactme-title{
@@ -356,8 +386,6 @@ fieldset{
     width: 100%;
     margin: 0 20px;
     
-
-    
 }
 
 .app-dev{
@@ -373,7 +401,7 @@ fieldset{
     background-color: lightskyblue;
     border-radius: 20px;
     padding:10px;
-    margin-right: 20px;
+    margin-right: 50px;
     width: 30%;
 }
 
@@ -382,6 +410,7 @@ fieldset{
     background-color: rgb(61, 18, 18);
     border-radius: 20px;
     padding: 10px;
+    margin-left: 10px;
 }
 .web-skills-header{
     text-align: center;
@@ -410,7 +439,7 @@ fieldset{
 }
 
 .web-btn1{
-    align-items: center;
+    text-align: center;
 }
 .web-btn:hover{
     cursor: pointer;
@@ -424,47 +453,53 @@ fieldset{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-    row-gap: 20px;
+    row-gap: 40px;
     margin-top: 20px;
-    width: 100%;
-
+    width: 80%;   
 }
 
 .project1{
     margin-left: 20px;
     margin-right: 20px;
+    
 }
 
 .img-a{
         width: 400px;
         height: 450px;
-        margin-left: 20px; 
+        margin-left: 20px;
+        border-radius: 25px;
 }
 .img-b{
     width: 400px;
     height: 450px;
+    border-radius: 25px;
     
 }
 .img-c{
     width: 400px;
     height: 450px;
+    border-radius: 25px;
     
 }
 .img-d{
     width: 400px;
     height: 450px;
     margin-left: 20px;
+    border-radius: 25px;
     
 }
 .img-e{
     width: 400px;
     height: 450px;
+    border-radius: 25px;
 
     
 }
 .img-f{
     width: 400px;
     height: 450px;
+    border-radius: 25px;
     
 }
 
@@ -479,6 +514,7 @@ fieldset{
     display: flex;
     margin: 1px;
     margin-bottom: 20px;
+    margin-left: 30px;
     
 }
 
@@ -537,19 +573,22 @@ fieldset{
     font-size: 50px;
     text-align: center;
     margin-bottom: 30px;
+    margin-top: 70px;
 }
+
+/* css for education section */
 
 .edu-container{
     border: 2px solid rgba(0, 0, 5, 0.116);
     box-shadow: 2px 2px 5px rgb(14, 14, 71);
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 0 10px;
 }
 
 .main-container{
     display: flex;
     justify-content: space-between;
-    margin:20px;
+    margin-top:0 20px;
 }
 
 .btn{
@@ -571,25 +610,24 @@ fieldset{
 }
 
 
-.foot-btn{
-    font-size: 20px;
+.foot-p .foot-btns{
+    font-size: 16px;
     background-color: green;
-    padding: 5px 20px;
     color: white;
     border-radius: 10px;
+    padding: 8px 20px;
     
 }
 .foot-p{
     text-align: center;
+    margin-top: 30px;
+    
     
 }
 
-.footer-links{
-    display: flex;
-    justify-content:center
+.foot-form{
+    
 }
-
-
 
 .footer-para{
     text-align: center;
@@ -616,12 +654,47 @@ fieldset{
 }
 
 .fa-solid{
-    
+
 }
-
-
+.container{
+    text-align: center;
+    margin-top: 50px;
+}
+.container p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 /* css for smaller screens */
 
 @media only screen and (max-width: 600px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    #header-section{
+        background-image: url(../images/nony.jpeg);
+        background-repeat: no-rep;
+        background-size: cover;
+        background-position: center center;
+       
+    }
+    .navigation-container{
     
+        display: none;
+    }
+    
+    .hero-message {
+        font-size: 10px;
+        font-weight: 700;
+        background-color: lightpink;
+        width:40%;
+
+    }
+
+    .hero-message p{
+        width: 100%;
+        
+    }
 }
