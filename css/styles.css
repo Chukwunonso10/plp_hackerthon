@@ -757,4 +757,13 @@ fieldset{
         width: 100%;
         margin:10px;
     }
+
+    textarea{
+        text-align: center;
+        width: 75%;
+    }
+
+    .project-container{
+        display: grid;
+    }
 }
