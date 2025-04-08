@@ -154,7 +154,6 @@ body{
     flex-basis: 40%;
     margin-left: 10px;
     
-    
  }
  .about-image img{
     border-radius: 15px;
@@ -582,18 +581,24 @@ fieldset{
     border: 2px solid rgba(0, 0, 5, 0.116);
     box-shadow: 2px 2px 5px rgb(14, 14, 71);
     padding: 10px;
-    margin-left: 0 10px;
+    margin-left: 0 20px;
+    flex: 1;
+    
 }
 
 .main-container{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top:0 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+   
 }
 
 .btn{
     text-align: center;
-    padding:10px 35px;
+    padding:10px 70px;
 }
 
 .btn1{
@@ -673,28 +678,83 @@ fieldset{
         margin: 0;
         box-sizing: border-box;
     }
+
     #header-section{
         background-image: url(../images/nony.jpeg);
         background-repeat: no-rep;
         background-size: cover;
-        background-position: center center;
+        background-position: right left;
        
     }
     .navigation-container{
     
         display: none;
     }
+    .about-container{
+        display: grid;
+    }
     
     .hero-message {
-        font-size: 10px;
         font-weight: 700;
-        background-color: lightpink;
         width:40%;
+        margin-left: 10px;
+        
+
+    }
+    .hero-message p{
+        margin-top: 40px;
+        font-size: 20px;
+        line-height: 1.5em;
+        width: 100%;
+    }
+    .hero-message h1{
+        font-size: 25px;
+        line-height: 1.5em;
+    }
+
+    .about-image{
+        width: 100%;
+        margin-right: 20px;
+    }
+    .about-image img{
+        width: 100%;
+        padding-right: 50px;
+    }
+    .about-message{
+        margin: 0;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 12px;
+        
+    }
+    .contact-title{
+        font-size: 60px;
+        padding-top: 30px;
 
     }
 
-    .hero-message p{
+    .interest-header{
+        margin-top: 120px;
+    }
+
+    .interest-container{
+        display: grid;
+        grid-template-columns: 1fr;
         width: 100%;
-        
+        row-gap: 30px;
+        margin: 0;
+    }
+    .web-container{
+        width: 100%;
+        margin-right: 10px;
+
+    }
+
+    .app-dev{
+        width: 100%;
+    }
+    .robotics{
+        width: 100%;
+        margin:10px;
     }
 }
